@@ -25,10 +25,10 @@ export const ProjectCard = ({
         })}
       </ul>
       <div className={styles.links}>
-       {demo&&<a href={demo} className={styles.link}>
+       {demo&&<a href={demo} target="_blank" className={styles.link}>
           Demo
         </a>}
-        <a href={source} className={styles.link}>
+        <a href={source} target="_blank" className={styles.link}>
           Source
         </a>
       </div>
