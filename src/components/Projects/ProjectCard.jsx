@@ -28,9 +28,9 @@ export const ProjectCard = ({
        {demo&&<a href={demo} target="_blank" className={styles.link}>
           Demo
         </a>}
-        <a href={source} target="_blank" className={styles.link}>
+        {source&&<a href={source} target="_blank" className={styles.link}>
           Source
-        </a>
+        </a>}
       </div>
     </div>
   );

@@ -22,5 +22,13 @@
     {
       "title": "MongoDB",
       "imageSrc": "skills/mongodb.png"
+    },
+    {
+      "title": "NextJS",
+      "imageSrc": "skills/Next.js.png"
+    },
+    {
+      "title": "Prisma",
+      "imageSrc": "skills/prisma.423x512.png"
     }
   ]

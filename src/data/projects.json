@@ -3,9 +3,16 @@
       "title": "Refurbished Marketplace",
       "imageSrc": "projects/2023-10-30.png",
       "description": "This is a project made to learn MERN stack by building a refurbished marketplace app.",
-      "skills": ["React", "Express", "Node","MongoDB"],
+      "skills": ["React", "Express", "Node","MongoDB","AntDesign","cloudinary"],
       "demo": "https://naveenmp.onrender.com",
       "source": "https://github.com/naveentnaik/naveenmp"
+    },
+    {
+      "title": "Necurity",
+      "imageSrc": "projects/Screenshot 2024-09-14 093549.png",
+      "description": "Necurity is a dashboard built to provide insightful and actionable data related to cybersecurity.",
+      "skills": ["React", "Express", "Node","MongoDB","FramerMotion","ChartJs"],
+      "demo":"https://necurity-gray.vercel.app"
     },
     {
       "title": "Betstar",
