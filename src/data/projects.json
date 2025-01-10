@@ -11,7 +11,7 @@
       "title": "Necurity",
       "imageSrc": "projects/Screenshot 2024-09-14 093549.png",
       "description": "Necurity is a dashboard built to provide insightful and actionable data related to cybersecurity.",
-      "skills": ["React", "Express", "Node","MongoDB","FramerMotion","ChartJs"],
+      "skills": ["React", "Express", "Node","MongoDB","Framer","ChartJs"],
       "demo":"https://necurity-gray.vercel.app"
     },
     {

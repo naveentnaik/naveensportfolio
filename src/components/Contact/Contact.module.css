@@ -8,20 +8,51 @@
   flex-direction: row;
   justify-content: space-evenly;
   width: 100vw;
-  padding: 58px 10%;
-  gap: 10px;
+  padding: 80px 10%; 
+  gap: 40px; 
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0,0,0,0.05), rgba(255,255,255,0.05));
+  pointer-events: none;
 }
 
 .text h2 {
-  font-size: 80px;
+  font-size: 72px; 
   font-weight: 700;
   letter-spacing: 4px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.text h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--color-text);
+  transition: width 0.3s ease;
+}
+
+.text h2:hover::after {
+  width: 100%;
 }
 
 .text p {
-  font-size: 40px;
+  font-size: 32px; 
   font-weight: 400;
   letter-spacing: 2px;
+  opacity: 0.9;
 }
 
 .links {
@@ -29,27 +60,62 @@
   flex-direction: column;
   align-items: flex-start;
   list-style: none;
-  gap: 26px;
+  gap: 32px; 
 }
 
 .link {
   display: flex;
   align-items: center;
   gap: 25px;
+  transition: transform 0.3s ease;
+}
+
+.link:hover {
+  transform: translateX(10px);
+}
+
+.link img {
+  width: 32px; 
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.link:hover img {
+  transform: scale(1.1);
 }
 
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 30px;
+  font-size: 24px; 
   font-weight: 400;
   letter-spacing: 1.5px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+
+.link a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-text);
+  transition: width 0.3s ease;
+}
+
+.link a:hover::after {
+  width: 100%;
 }
 
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
-    gap: 23px;
+    gap: 40px;
+    padding: 60px 5%;
+    text-align: center;
   }
 
   .text {
@@ -58,7 +124,26 @@
     align-items: center;
   }
 
+  .text h2 {
+    font-size: 56px;
+  }
+
+  .text p {
+    font-size: 24px;
+  }
+
   .links {
     align-items: center;
+    width: 100%;
+  }
+
+  .link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .text h2::after {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

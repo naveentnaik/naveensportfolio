@@ -1,26 +1,116 @@
 @import "../../vars.css";
 
 .container {
-  margin-top: 76px;
+  margin-top: 100px;
   color: var(--color-text);
   margin-left: 10%;
   margin-right: 10%;
+  position: relative;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10%;
+  right: -10%;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(87, 108, 188, 0.1) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .title {
-  font-size: 35px;
+  font-size: 42px;
   font-weight: 700;
-  letter-spacing: 1.75px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.title:hover::after {
+  width: 100%;
 }
 
 .projects {
-  margin-top: 37px;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch; 
   justify-content: center;
-  gap: 15px;
+  gap: 30px; 
   width: 100%;
+  position: relative;
+}
+
+
+.projects > * {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.projects > *:nth-child(1) { animation-delay: 0.1s; }
+.projects > *:nth-child(2) { animation-delay: 0.2s; }
+.projects > *:nth-child(3) { animation-delay: 0.3s; }
+.projects > *:nth-child(4) { animation-delay: 0.4s; }
+.projects > *:nth-child(5) { animation-delay: 0.5s; }
+.projects > *:nth-child(6) { animation-delay: 0.6s; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title {
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .projects {
+    margin-top: 30px;
+    gap: 20px;
+  }
+}
+
+@container (min-width: 1200px) {
+  .projects {
+    gap: 40px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }

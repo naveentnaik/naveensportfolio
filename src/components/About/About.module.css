@@ -2,49 +2,85 @@
 
 .container {
   position: relative;
-  background-color: rgba(12, 12, 12, 0.6);
-  border-radius: 15px;
-  padding: 73px;
-  margin-top: 129px;
-  z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
+  background: linear-gradient(
+    135deg,
+    rgba(12, 12, 12, 0.8) 0%,
+    rgba(25, 55, 109, 0.85) 100%
+  );
+  border-radius: 24px;
+  padding: 60px;
+  margin: 60px 10% 60px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
 }
 
 .title {
   color: var(--color-text);
-  font-size: 35px;
+  font-size: 38px;
   font-weight: 700;
-  letter-spacing: 1.75px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.title:hover::after {
+  width: 100%;
 }
 
 .content {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 60px;
 }
 
 .aboutImage {
   width: 35%;
-  padding-right: 10px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.aboutImage:hover {
+  transform: scale(1.03) rotate(-1deg);
 }
 
 .aboutItems {
-  color: var(--color-text);
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .aboutItem {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 20px;
   border-radius: 20px;
   list-style: none;
-  padding: 25px;
+  padding: 30px;
   background-image: linear-gradient(
     90deg,
     rgba(165, 215, 232, 0.42) 0%,
@@ -52,31 +88,88 @@
   );
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: 0.4s;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .aboutItem:hover {
   background-size: 100% 100%;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.aboutItem img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.aboutItem:hover img {
+  transform: rotate(10deg);
+}
+
+.aboutItemText {
+  flex: 1;
 }
 
 .aboutItem h3 {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 600;
+  margin: 0 0 10px 0;
+  background: linear-gradient(90deg, #fff, #e0e0e0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .aboutItem p {
-  font-size: 25px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.9;
+  color: var(--color-text);
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 60px 40px;
+    margin: 100px 5% 40px;
+  }
+
+  .content {
+    gap: 40px;
+  }
+
+  .aboutItem {
+    padding: 25px;
+  }
+
+  .aboutItem h3 {
+    font-size: 24px;
+  }
+
+  .aboutItem p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 830px) {
   .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+    background: rgba(12, 12, 12, 0.6);
+    padding: 40px 20px;
+    margin-top: 80px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 30px;
   }
 
   .content {
     flex-direction: column;
+    gap: 30px;
   }
 
   .aboutImage {
@@ -84,11 +177,43 @@
   }
 
   .aboutItems {
-    margin-top: 29px;
+    margin-top: 20px;
+    gap: 30px;
   }
 
   .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 20px;
+  }
+
+  .aboutItem img {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 30px 15px;
+    margin: 60px 16px;
+    border-radius: 16px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .aboutItem {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .aboutItem img {
+    margin-bottom: 15px;
+  }
+
+  .aboutItemText {
+    text-align: center;
   }
 }
