@@ -1,24 +1,38 @@
 [
-    {
-      "title": "Refurbished Marketplace",
-      "imageSrc": "projects/2023-10-30.png",
-      "description": "This is a project made to learn MERN stack by building a refurbished marketplace app.",
-      "skills": ["React", "Express", "Node","MongoDB","AntDesign","cloudinary"],
-      "demo": "https://naveenmp.onrender.com",
-      "source": "https://github.com/naveentnaik/naveenmp"
-    },
-    {
-      "title": "Necurity",
-      "imageSrc": "projects/Screenshot 2024-09-14 093549.png",
-      "description": "Necurity is a dashboard built to provide insightful and actionable data related to cybersecurity.",
-      "skills": ["React", "Express", "Node","MongoDB","Framer","ChartJs"],
-      "demo":"https://necurity-gray.vercel.app"
-    },
-    {
-      "title": "Betstar",
-      "imageSrc": "projects/imgonline-com-ua-twotoone-VdUuLeA0dQ8Y6eF.jpg",
-      "description": "This is a project made to learn otp login functionality with react-native and firebase.",
-      "skills": ["ReactNative", "Firebase"],
-      "source": "https://github.com/naveentnaik/betstar"
-    }
-  ]
+  {
+    "title": "Scoreblitz",
+    "imageSrc": "projects/scoreblitz.png",
+    "description": "ScoreBliiz is a comprehensive cricket platform delivering real-time scores, match schedules, series updates, and global team rankings.",
+    "skills": ["React","Shadcn", "Express", "Node"],
+    "demo": "https://scoreblitz.onrender.com"
+  },
+  {
+    "title": "Necurity",
+    "imageSrc": "projects/Screenshot 2024-09-14 093549.png",
+    "description": "Necurity is a dashboard built to provide insightful and actionable data related to cybersecurity.",
+    "skills": ["React", "Express", "Node", "MongoDB", "Framer", "ChartJs"],
+    "demo": "https://necurity-gray.vercel.app"
+  },
+  {
+    "title": "Refurbished Marketplace",
+    "imageSrc": "projects/2023-10-30.png",
+    "description": "This is a project made to learn MERN stack by building a refurbished marketplace app.",
+    "skills": [
+      "React",
+      "Express",
+      "Node",
+      "MongoDB",
+      "AntDesign",
+      "cloudinary"
+    ],
+    "demo": "https://naveenmp.onrender.com",
+    "source": "https://github.com/naveentnaik/naveenmp"
+  },
+  {
+    "title": "Betstar",
+    "imageSrc": "projects/imgonline-com-ua-twotoone-VdUuLeA0dQ8Y6eF.jpg",
+    "description": "This is a project made to learn otp login functionality with react-native and firebase.",
+    "skills": ["ReactNative", "Firebase"],
+    "source": "https://github.com/naveentnaik/betstar"
+  }
+]
