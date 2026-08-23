@@ -8,6 +8,7 @@ import { ProjectCard } from "./ProjectCard";
 export const Projects = () => {
   return (
     <section className={styles.container} id="projects">
+      <span className={styles.eyebrow}>03 — Projects</span>
       <h2 className={styles.title}>Projects</h2>
       <div className={styles.projects}>
         {projects.map((project, id) => {

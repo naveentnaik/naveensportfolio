@@ -9,7 +9,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
-        Portfolio
+        <span className={styles.titleMark}>N</span>Naveen
       </a>
       <div className={styles.menu} >
         <img
@@ -20,7 +20,6 @@ export const Navbar = () => {
               : getImageUrl("nav/menuIcon.png")
           }
           alt="menu-button"
-          hidden
           onClick={() => setMenuOpen(!menuOpen)}
         />
         <ul
