@@ -2,10 +2,12 @@ import React from "react";
 
 import styles from "./Hero.module.css";
 import { getImageUrl } from "../../utils";
+import { ParticleField } from "./ParticleField";
 
 export const Hero = () => {
   return (
     <section className={styles.container}>
+      <ParticleField />
       <div className={styles.content}>
         <span className={styles.eyebrow}>Fullstack Developer</span>
         <h1 className={styles.title}>Hi, I&apos;m Naveen</h1>
