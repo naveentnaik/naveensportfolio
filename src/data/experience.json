@@ -1,0 +1,20 @@
+[
+  {
+    "role": "Full Stack Developer",
+    "company": "Orello Creatives",
+    "employment": "Full-time",
+    "startDate": "2025-04-01",
+    "endDate": null,
+    "location": "Remote",
+    "skills": ["CSS", "JavaScript"]
+  },
+  {
+    "role": "Full-Stack Developer",
+    "company": "Self-employed",
+    "employment": "Self-employed",
+    "startDate": "2024-01-01",
+    "endDate": "2025-02-01",
+    "location": "Honnavar Taluk, Karnataka, India · Remote",
+    "skills": ["Framer", "CSS"]
+  }
+]

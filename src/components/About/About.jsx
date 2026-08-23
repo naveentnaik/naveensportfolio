@@ -36,7 +36,6 @@ export const About = () => {
       className={`${styles.container} reveal ${inView ? "in-view" : ""}`}
       id="about"
     >
-      <span className={styles.eyebrow}>01 — About</span>
       <h2 className={styles.title}>About Me</h2>
       <div className={styles.content}>
         <img
