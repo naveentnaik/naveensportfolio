@@ -1,15 +1,36 @@
 :root {
-    /* Colours */
-    --color-text: #fff;
-    --color-primary: #4a5ca6;
-    --color-secondary: #19376d;
-    --color-dark: #0b2447;
-    --color-bg: #092240;
-  
-    /* Fonts */
-    --font-roboto: "Roboto";
-  }
+  /* Surfaces */
+  --color-bg: #08090d;
+  --color-bg-soft: #0c0e14;
+  --color-surface: #12141c;
+  --color-surface-hover: #171a24;
+  --color-border: rgba(255, 255, 255, 0.09);
+  --color-border-strong: rgba(255, 255, 255, 0.18);
 
+  /* Text */
+  --color-text: #f3f4f7;
+  --color-text-muted: #9093a3;
+  --color-text-faint: #5b5e6c;
 
+  /* Accent */
+  --color-primary: #7c6cff;
+  --color-primary-hover: #9285ff;
+  --color-primary-soft: rgba(124, 108, 255, 0.14);
+  --color-accent: #43e6b5;
 
+  /* Legacy aliases kept for compatibility */
+  --color-secondary: var(--color-surface);
+  --color-dark: var(--color-bg-soft);
 
+  /* Fonts */
+  --font-sans: "Outfit", "Segoe UI", Arial, Helvetica, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", "Roboto Mono", Menlo, Consolas,
+    monospace;
+
+  /* Layout */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --max-width: 1180px;
+  --section-padding: 120px;
+}

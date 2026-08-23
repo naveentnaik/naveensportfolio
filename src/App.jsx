@@ -8,16 +8,19 @@ import { Contact } from "./components/Contact/Contact";
 
 
 function App() {
- 
+
   return (
     <div className={styles.App}>
-    <Navbar/>
-    <Hero />
-    <About/>
-    <Skills/>
-    <Projects/>
-    <Contact/>
-    </div>   
+      <div className={styles.backdrop} aria-hidden="true" />
+      <div className={styles.content}>
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
+    </div>
   )
 }
 
