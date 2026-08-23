@@ -2,10 +2,17 @@ import React from "react";
 
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
+import { useReveal } from "../../hooks/useReveal";
 
 export const Contact = () => {
+  const [ref, inView] = useReveal();
+
   return (
-    <footer id="contact" className={styles.container}>
+    <footer
+      ref={ref}
+      id="contact"
+      className={`${styles.container} reveal ${inView ? "in-view" : ""}`}
+    >
       <div className={styles.inner}>
         <div className={styles.text}>
           <span className={styles.eyebrow}>04 — Contact</span>

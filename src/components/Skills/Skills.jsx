@@ -2,10 +2,17 @@ import React from "react";
 import styles from "./Skills.module.css";
 import skills from "../../data/skills.json";
 import { getImageUrl } from "../../utils";
+import { useReveal } from "../../hooks/useReveal";
 
 export const Skills = () => {
+  const [ref, inView] = useReveal();
+
   return (
-    <section className={styles.container} id="skills">
+    <section
+      ref={ref}
+      className={`${styles.container} reveal ${inView ? "in-view" : ""}`}
+      id="skills"
+    >
       <span className={styles.eyebrow}>02 — Skills</span>
       <h2 className={styles.title}>Skills</h2>
       <div className={styles.content}>

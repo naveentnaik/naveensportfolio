@@ -6,8 +6,15 @@ import { getImageUrl } from "../../utils";
 export const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },
 }) => {
+  const handleMouseMove = (e) => {
+    const bounds = e.currentTarget.getBoundingClientRect();
+    e.currentTarget.style.setProperty("--x", `${e.clientX - bounds.left}px`);
+    e.currentTarget.style.setProperty("--y", `${e.clientY - bounds.top}px`);
+  };
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} onMouseMove={handleMouseMove}>
+      <div className={styles.spotlight} aria-hidden="true" />
       <img
         src={getImageUrl(imageSrc)}
         alt={`Image of ${title}`}
