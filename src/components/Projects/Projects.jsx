@@ -15,7 +15,6 @@ export const Projects = () => {
       className={`${styles.container} reveal ${inView ? "in-view" : ""}`}
       id="projects"
     >
-      <span className={styles.eyebrow}>03 — Projects</span>
       <h2 className={styles.title}>Projects</h2>
       <div className={styles.projects}>
         {projects.map((project, id) => {

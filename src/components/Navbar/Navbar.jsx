@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
 
-const sections = ["about", "skills", "projects", "contact"];
+const sections = ["about", "experience", "skills", "projects", "contact"];
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

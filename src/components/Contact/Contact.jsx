@@ -15,7 +15,6 @@ export const Contact = () => {
     >
       <div className={styles.inner}>
         <div className={styles.text}>
-          <span className={styles.eyebrow}>04 — Contact</span>
           <h2>Let&apos;s work together</h2>
           <p>Feel free to reach out — I&apos;m always open to new projects.</p>
         </div>
