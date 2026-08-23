@@ -8,27 +8,59 @@
       "imageSrc": "skills/css.png"
     },
     {
+      "title": "Tailwind CSS",
+      "imageSrc": "skills/tailwindcss.svg"
+    },
+    {
         "title": "JavaScript",
         "imageSrc": "skills/js.png"
       },
     {
+      "title": "TypeScript",
+      "imageSrc": "skills/typescript.svg"
+    },
+    {
       "title": "React",
       "imageSrc": "skills/react.png"
+    },
+    {
+      "title": "Redux",
+      "imageSrc": "skills/redux.svg"
     },
     {
       "title": "Node",
       "imageSrc": "skills/node.png"
     },
     {
+      "title": "Express",
+      "imageSrc": "skills/express.svg"
+    },
+    {
       "title": "MongoDB",
       "imageSrc": "skills/mongodb.png"
+    },
+    {
+      "title": "Redis",
+      "imageSrc": "skills/redis.svg"
+    },
+    {
+      "title": "Prisma",
+      "imageSrc": "skills/prisma.423x512.png"
     },
     {
       "title": "NextJS",
       "imageSrc": "skills/Next.js.png"
     },
     {
-      "title": "Prisma",
-      "imageSrc": "skills/prisma.423x512.png"
+      "title": "shadcn/ui",
+      "imageSrc": "skills/shadcnui.svg"
+    },
+    {
+      "title": "GSAP",
+      "imageSrc": "skills/gsap.svg"
+    },
+    {
+      "title": "DigitalOcean",
+      "imageSrc": "skills/digitalocean.svg"
     }
   ]
