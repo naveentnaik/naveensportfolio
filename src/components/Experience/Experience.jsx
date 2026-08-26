@@ -35,13 +35,6 @@ export const Experience = () => {
                   {job.company} · {job.employment}
                 </p>
                 <p className={styles.location}>{job.location}</p>
-                {job.skills?.length > 0 && (
-                  <ul className={styles.skills}>
-                    {job.skills.map((skill) => (
-                      <li key={skill}>{skill}</li>
-                    ))}
-                  </ul>
-                )}
               </div>
             </li>
           );
